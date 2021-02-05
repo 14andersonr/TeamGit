@@ -1,2 +1,14 @@
 
+<<<<<<< HEAD
 .vs/TeamGit/v16/.suo
+=======
+TeamGit.Models/obj/Debug/TeamGit.Models.csprojAssemblyReference.cache
+.vs/TeamGit/config/applicationhost.config
+TeamGit.Data/obj/Debug/TeamGit.Data.csprojAssemblyReference.cache
+*.cache
+*.config
+*.cache
+.vs/TeamGit/v16/.suo
+*.cache
+*.cache
+>>>>>>> 393c9bb1395d72513e7604708956e1b80a263927

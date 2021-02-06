@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using TeamGit.Data;
+using TeamGit.Models;
 using TeamGit.Services;
 
 namespace TeamGit.WebAPI.Controllers
@@ -15,8 +16,8 @@ namespace TeamGit.WebAPI.Controllers
         public IHttpActionResult Get()
         {
             CommentService commentService = CreateCommentService();
-            var comment = commentService.GetComments();
-            return Ok(comment);
+            var comments = commentService.GetComments();
+            return Ok(comments);
         }
 
         public IHttpActionResult Post(Comment comment)
@@ -35,6 +36,13 @@ namespace TeamGit.WebAPI.Controllers
             var userId = Guid.Parse(User.Identity.GetUserId());
             var commentService = new CommentService(userId);
             return commentService;
+        }
+
+        public IHttpActionResult Get(int id)
+        {
+            CommentService noteService = CreateCommentService();
+            var note = noteService.GetCommentById(id);
+            return Ok(note);
         }
     }
 

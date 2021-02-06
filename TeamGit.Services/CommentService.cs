@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TeamGit.Data;
+using TeamGit.Models;
 
 namespace TeamGit.Services
 {
@@ -17,7 +18,7 @@ namespace TeamGit.Services
             _userId = userId;
         }
 
-        public IEnumerable<Comment> GetComments()
+        public IEnumerable<CommentItem> GetComments()
         {
 
             using (var ctx = new ApplicationDbContext())
@@ -25,10 +26,10 @@ namespace TeamGit.Services
                 var query =
                     ctx
                         .Comments
-                        .Where(e => e.Auther == _userId)
+                        .Where(e => e.Author == _userId)
                         .Select(
                             e =>
-                                new Comment
+                                new CommentItem
                                 {
                                     Text = e.Text,
                                     Id = e.Id,
@@ -40,6 +41,22 @@ namespace TeamGit.Services
             }
         }
 
+        public CommentDetail GetCommentById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Comments
+                        .Single(e => e.Id == id && e.Author == _userId);
+                return
+                    new CommentDetail
+                    {
+                        Id = entity.Id,
+                        Text = entity.Text,
+                    };
+            }
+        }
         public bool CreateComment(Comment model)
         {
             var entity =
@@ -47,6 +64,8 @@ namespace TeamGit.Services
                 {
                     Text = model.Text,
                     Id = model.Id,
+                    PostId = model.PostId,
+                    Author = _userId,
                 };
 
             using (var ctx = new ApplicationDbContext())

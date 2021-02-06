@@ -26,3 +26,4 @@ C:\ElevenFiftyProjects\Blue Badge\TeamGit\TeamGit.Models\obj\Debug\TeamGit.Model
 C:\ElevenFiftyProjects\Blue Badge\TeamGit\TeamGit.Models\obj\Debug\TeamGit.Models.csproj.CopyComplete
 C:\ElevenFiftyProjects\Blue Badge\TeamGit\TeamGit.Models\obj\Debug\TeamGit.Models.dll
 C:\ElevenFiftyProjects\Blue Badge\TeamGit\TeamGit.Models\obj\Debug\TeamGit.Models.pdb
+C:\ElevenFiftyProjects\Blue Badge\TeamGit\TeamGit.Models\obj\Debug\TeamGit.Models.csprojAssemblyReference.cache

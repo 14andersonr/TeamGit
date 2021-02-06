@@ -16,7 +16,7 @@ namespace TeamGit.Data
         [Required]
         public string Text { get; set; }
        
-        public Guid Auther { get; set; }
+        public Guid Author { get; set; }
 
         //[ForeignKey](nameof)(Post))]
         public int PostId { get; set; }

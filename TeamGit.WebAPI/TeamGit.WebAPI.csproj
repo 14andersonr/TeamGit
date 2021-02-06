@@ -306,6 +306,20 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TeamGit.Data\TeamGit.Data.csproj">
+      <Project>{b262a0a7-a20c-4fb1-94db-7b3d6d273c42}</Project>
+      <Name>TeamGit.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeamGit.Models\TeamGit.Models.csproj">
+      <Project>{1f037709-8c4b-4b74-9123-eb21ada244fe}</Project>
+      <Name>TeamGit.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeamGit.Services\TeamGit.Services.csproj">
+      <Project>{9467fefe-f2a1-4641-9e24-51cfc192a698}</Project>
+      <Name>TeamGit.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

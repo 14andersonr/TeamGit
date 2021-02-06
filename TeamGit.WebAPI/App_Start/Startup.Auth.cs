@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using TeamGit.WebAPI.Providers;
 using TeamGit.WebAPI.Models;
+using TeamGit.Data;
 
 namespace TeamGit.WebAPI
 {

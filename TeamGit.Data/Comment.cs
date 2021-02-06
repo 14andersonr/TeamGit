@@ -8,23 +8,20 @@ using System.Threading.Tasks;
 
 namespace TeamGit.Data
 {
-    
+
     public class Comment
     {
         [Key]
         public int Id { get; set; }
+        [Required]
         public string Text { get; set; }
-       // [ForeignKey(Auther)]/UserId
+       
         public Guid Auther { get; set; }
 
-        //(virtual list of Replies)
-      //(Foreign Key to Post via Id w/ virtual Post) 
-//Reply(either as a separate class, or inherited from Comment - your choice)
-
-
-
-
-
-
+        //[ForeignKey](nameof)(Post))]
+        public int PostId { get; set; }
+        //public virtual Post   { get; set; }
+        //public virtual List<Reply> Reply { get; set; }
     }
 }
+

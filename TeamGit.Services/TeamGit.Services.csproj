@@ -75,11 +75,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TeamGit.Data\TeamGit.Data.csproj">
+      <Project>{b262a0a7-a20c-4fb1-94db-7b3d6d273c42}</Project>
+      <Name>TeamGit.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeamGit.Models\TeamGit.Models.csproj">
+      <Project>{1f037709-8c4b-4b74-9123-eb21ada244fe}</Project>
+      <Name>TeamGit.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

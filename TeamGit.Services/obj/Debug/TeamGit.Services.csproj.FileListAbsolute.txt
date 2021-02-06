@@ -27,3 +27,9 @@ C:\ElevenFiftyProjects\SDBlueBadge\TeamGit\TeamGit.Services\obj\Debug\TeamGit.Se
 C:\ElevenFiftyProjects\SDBlueBadge\TeamGit\TeamGit.Services\obj\Debug\TeamGit.Services.csproj.CopyComplete
 C:\ElevenFiftyProjects\SDBlueBadge\TeamGit\TeamGit.Services\obj\Debug\TeamGit.Services.dll
 C:\ElevenFiftyProjects\SDBlueBadge\TeamGit\TeamGit.Services\obj\Debug\TeamGit.Services.pdb
+C:\ElevenFiftyProjects\SDBlueBadge\TeamGit\TeamGit.Services\bin\Debug\TeamGit.Data.dll
+C:\ElevenFiftyProjects\SDBlueBadge\TeamGit\TeamGit.Services\bin\Debug\TeamGit.Models.dll
+C:\ElevenFiftyProjects\SDBlueBadge\TeamGit\TeamGit.Services\bin\Debug\TeamGit.Data.pdb
+C:\ElevenFiftyProjects\SDBlueBadge\TeamGit\TeamGit.Services\bin\Debug\TeamGit.Data.dll.config
+C:\ElevenFiftyProjects\SDBlueBadge\TeamGit\TeamGit.Services\bin\Debug\TeamGit.Models.pdb
+C:\ElevenFiftyProjects\SDBlueBadge\TeamGit\TeamGit.Services\bin\Debug\TeamGit.Models.dll.config
